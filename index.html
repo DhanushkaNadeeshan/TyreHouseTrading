@@ -174,6 +174,11 @@
 		#myBtn:hover {
 			background-color: #555;
 		}
+
+		.zoom:hover {
+			transform: scale(1.2);
+			/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+		}
 	</style>
 </head>
 
@@ -333,11 +338,11 @@
 			</div> <!-- .title-block -->
 
 			<div class="customer-logos">
-				<div class="slide item-wrapper"><a href="#"><img src="img/PRESA-BANNER.jpg"></a></div>
-				<div class="slide item-wrapper"><a href="#"><img src="img/b.jpg"></a></div>
-				<div class="slide item-wrapper"><a href="#"><img src="img/c.jpg"></a></div>
-				<div class="slide item-wrapper"><a href="#"><img src="img/d.jpg"></a></div>
-				<div class="slide item-wrapper"><a href="#"><img src="img/c.jpg"></a></div>
+				<div class="slide item-wrapper zoom"><a href="#"><img src="img/PRESA-BANNER.jpg"></a></div>
+				<div class="slide item-wrapper zoom"><a href="#"><img src="img/b.jpg"></a></div>
+				<div class="slide item-wrapper zoom"><a href="#"><img src="img/c.jpg"></a></div>
+				<div class="slide item-wrapper zoom"><a href="#"><img src="img/d.jpg"></a></div>
+				<div class="slide item-wrapper zoom"><a href="#"><img src="img/c.jpg"></a></div>
 
 			</div>
 			<br>
@@ -409,44 +414,55 @@
 
 
 	<!-- =========================================== img =================================== -->
-	<section class="blog-section blog-style-02 section-block">
+	<section class="portfolio-section portfolio-style-01 section-block">
 		<div class="container">
+			<div class="title-block">
+				<h2>Our Featured Work</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore mollit anim id est laborum.
+				</p>
+			</div> <!-- .title-block -->
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="post-wrapper post-overlay">
-						<div class="image-wrapper gradient-black">
-							<img class="img-responsive" src="img/330.jpg" alt="blog image 01">
-						</div> <!-- .image-wrapper -->
-						<div class="post-content">
-							<ul class="post-meta">
-								<li>2019</li>
-								<li><a href="#">Tyre House Tranding</a></li>
-							</ul>
-							<h3><a href="#">Dealer Awards Nights</a></h3>
-						</div> <!-- .post-content -->
-					</div> <!-- .post-wrapper post-overlay -->
-				</div> <!-- .col-lg-4 -->
-				<div class="col-lg-4">
-					<div class="post-wrapper post-overlay">
-						<div class="image-wrapper gradient-black">
-							<img class="img-responsive" src="img/DSC_5403.jpg" alt="blog image 01">
-						</div> <!-- .image-wrapper -->
-						<div class="post-content">
-							<ul class="post-meta">
-								<li>2016</li>
-							</ul>
-							<h3><a href="#">Linglong Partner's Day 2016</a></h3>
-						</div> <!-- .post-content -->
-					</div> <!-- .post-wrapper post-overlay -->
-				</div> <!-- .col-lg-4 -->
+				<div class="col-md-12 portfolio-container">
+					<div class="col-md-6">
+						<div class="portfolio-item">
+							<div class="item-wrapper">
+								<img class="img-responsive" src="img/330.jpg" alt="portflio image one">
+								<div class="portfolio-details">
+									<a class="portfolio-popup" href="img/330.jpg"><span class="zoom-icon"></span></a>
+									<div class="hover-content">
+										<h3><a href="#">Etiam maximus urna at varius</a></h3>
+										<p>Category</p>
+									</div><!-- .hover-content -->
+								</div> <!-- .portfolio-details -->
+							</div> <!-- .item-wrapper -->
+						</div> <!-- .portfolio-item -->
+					</div>
+					<div class="col-md-6">
+						<div class="portfolio-item">
+							<div class="item-wrapper">
+								<img class="img-responsive" src="img/330.jpg" alt="portflio image one">
+								<div class="portfolio-details">
+									<a class="portfolio-popup" href="img/330.jpg"><span class="zoom-icon"></span></a>
+									<div class="hover-content">
+										<h3><a href="#">Etiam maximus urna at varius</a></h3>
+										<p>Category</p>
+									</div><!-- .hover-content -->
+								</div> <!-- .portfolio-details -->
+							</div> <!-- .item-wrapper -->
+						</div> <!-- .portfolio-item -->
+					</div>
+			>
+				</div> <!-- .portfolio-item -->
+			</div> <!-- .col-md-12 -->
+		</div> <!-- .row -->
 
-			</div> <!-- .row -->
-			<div class="btn-container">
-				<a class="btn btn-narrow" href="#" style="background-color: black;">View All</a>
-			</div>
-
+		<div class="btn-container text-center">
+			<a class="btn btn-narrow" href="#">View All</a>
+		</div> <!-- .btn-container -->
 		</div> <!-- .container -->
-	</section> <!-- .blog-section -->
+	</section> <!-- .portfolio-section -->
 	<!-- ============================================ end img =================================== -->
 
 
@@ -478,20 +494,25 @@
 		<div class="container">
 			<div class="contact-options section-block">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="icon-box"><i class="fa fa-map-marker"></i></div>
 						<h3>Address</h3>
 						<p>NO. 221 1/1, Sri Sangaraja Mawatha, Colombo 10, Sri Lanka.</p>
 					</div> <!-- .col-md-4 -->
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="icon-box"><i class="fa fa-phone"></i></div>
 						<h3>Phone</h3>
 						<a href="#"> 0115 445 400</a>
 					</div> <!-- .col-md-4 -->
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="icon-box"><i class="fa fa-envelope-o"></i></div>
 						<h3>Email</h3>
 						<a href="#">info@tyrehouse.com</a>
+					</div> <!-- .col-md-4 -->
+					<div class="col-md-3">
+						<div class="icon-box"><i class="fa fa-fax"></i></div>
+						<h3>Fax</h3>
+						<a href="#">0112 441 693</a>
 					</div> <!-- .col-md-4 -->
 				</div> <!-- .row -->
 			</div> <!-- .contact-options -->
